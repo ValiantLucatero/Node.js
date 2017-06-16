@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+  <script type="text/javascript">
+    function time(rawTime, cb)
+    {
+      setTimeout(() => {
+        if(rawTime % 2 == 0)
+        {
+          console.log(rawTime);
+        }
+        else
+        {
+          console.log(":)");
+        }
+        cb();
+      }, 1000);
+    }
+
+    time(Date.now(), () => {
+      time(Date.now(), () => {
+        time(Date.now(), () => {
+          time(Date.now(), () => {
+            time(Date.now(), () => {
+              time(Date.now(), () => {
+                time(Date.now(), () => {
+                  console.log("Ya me cansé");
+                })
+              })
+            })
+          })
+        })
+      })
+    })
+
+    function fibo(err, numbers, cb)
+    {
+      var last = numbers.slice(-1).pop();
+      var semiLast = numbers.slice(-2, -1).pop();
+      var res = last + semiLast;
+      numbers.push(res);
+      return cb(err, numbers);
+    }
+
+    fibo(null, [0,1], function (err, numbers)
+    {
+      return fibo(null, numbers, function (err, numbers)
+      {
+        return fibo(null, numbers, function (err, numbers)
+        {
+          return fibo(null, numbers, function (err, numbers)
+          {
+            return fibo(null, numbers, function (err, numbers)
+            {
+              return fibo(null, numbers, function (err, numbers)
+              {
+                return fibo(null, numbers, function (err, numbers)
+                {
+                  return fibo(null, numbers, function (err, numbers)
+                  {
+                    console.log(numbers[9]);
+                  });
+                });
+              });
+            });
+          });
+        });
+      });
+    });
+  </script>
