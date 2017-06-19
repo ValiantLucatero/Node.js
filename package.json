@@ -1,0 +1,21 @@
+{
+  "name": "curso",
+  "version": "1.0.0",
+  "description": "Practicas del curso",
+  "main": "Tarea1.html",
+  "scripts": {
+    "test": "prueba"
+  },
+  "keywords": [
+    "curso",
+    "node",
+    "sails"
+  ],
+  "author": "Jose Andres Lucatero",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.4.1",
+    "debug": "^2.6.8",
+    "lodash": "^4.17.4"
+  }
+}
