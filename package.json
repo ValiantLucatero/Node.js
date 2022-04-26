@@ -14,9 +14,9 @@
   "author": "Jose Andres Lucatero",
   "license": "MIT",
   "dependencies": {
-    "async": "^2.4.1",
-    "bluebird": "^3.5.0",
-    "debug": "^2.6.9",
+    "async": "^3.2.3",
+    "bluebird": "^3.7.2",
+    "debug": "^4.3.4",
     "lodash": "^4.17.21"
   }
 }
